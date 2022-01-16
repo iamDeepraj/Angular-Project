@@ -1,6 +1,5 @@
 import { Component, OnInit,Input, Output } from '@angular/core';
-
-
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-header',
@@ -10,10 +9,11 @@ import { Component, OnInit,Input, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
 
+
  
   constructor() { }
 
   ngOnInit(): void {
   }
- 
+  
 }
