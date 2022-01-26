@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { RidaProductCartComponent } from './rida-product-cart/rida-product-cart.component';
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -19,6 +20,9 @@ import { LaceComponent } from './lace/lace.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { SliderComponent } from './slider/slider.component';
+import { CommonModule } from '@angular/common';
+import { ProductDetailsComponent } from './Components/product-details/product-details.component';
+import { CartComponent } from './Components/cart/cart.component';
 
 
 
@@ -32,13 +36,13 @@ import { SliderComponent } from './slider/slider.component';
     AboutUsComponent,
     ContactUsComponent,
     RidaComponent,
-    PannelComponent,
     LaceComponent,
-    routingComponents,
     PageNotFoundComponent,
     HomeComponent,
-    SliderComponent
-   
+    SliderComponent,
+    RidaProductCartComponent,
+    ProductDetailsComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,8 @@ import { SliderComponent } from './slider/slider.component';
     FormsModule,
     HttpClientModule,
     OwlModule,
-    CarouselModule
+    CarouselModule,
+    CommonModule
   ],
   providers:[],
   bootstrap: [AppComponent]
